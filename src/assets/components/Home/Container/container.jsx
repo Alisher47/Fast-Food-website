@@ -1,7 +1,7 @@
 import React from "react";
-import image from '../../../../src/constants/images/baked-chicken-wings-asian-style-tomatoes-sauce-plate 1.jpg'
-import image1 from '../../../../src/constants/images/image 14.jpg';
-import image2 from '../../../../src/constants/images/Vector.jpg';
+import image from '../../../../../src/constants/images/baked-chicken-wings-asian-style-tomatoes-sauce-plate 1.jpg'
+import image1 from '../../../../../src/constants/images/image 14.jpg';
+import image2 from '../../../../../src/constants/images/Vector.jpg';
 
 const Container = () => {
   return (

@@ -1,17 +1,16 @@
 import React from 'react'
-import Oval from '../../../../src/constants/images/Oval.jpg';
-import Rectangle from '../../../../src/constants/images/Rectangle.png';
-import Like from '../../../../src/constants/images/Like.png';
-import Comments from '../../../../src/constants/images/Comment.jpg';
-import Shape from '../../../../src/constants/images/Shape.jpg';
-import Save from '../../../../src/constants/images/Save.png';
-import LikeInfo from '../../../../src/constants/images/Likes Info.png';
-import text from '../../../../src/constants/images/text.png';
-import instagram from '../../../../src/constants/images/instagram.png';
-import instagram2 from '../../../../src/constants/images/instagram2.png';
-import instagram3 from '../../../../src/constants/images/instagram3.png';
+import Oval from '../../../../../src/constants/images/Oval.jpg';
+import Rectangle from '../../../../../src/constants/images/Rectangle.png';
+import Like from '../../../../../src/constants/images/Like.png';
+import Comments from '../../../../../src/constants/images/Comment.jpg';
+import Shape from '../../../../../src/constants/images/Shape.jpg';
+import Save from '../../../../../src/constants/images/Save.png';
+import LikeInfo from '../../../../../src/constants/images/Likes Info.png';
+import text from '../../../../../src/constants/images/text.png';
+import instagram from '../../../../../src/constants/images/instagram.png';
+import instagram2 from '../../../../../src/constants/images/instagram2.png';
+import instagram3 from '../../../../../src/constants/images/instagram3.png';
 import Button from '../Buttons/buttons';
-import InstagramSvg from '../../../constants/icons/instagram.svg';
 const Instagram = () => {
   return (
     <div>

@@ -1,10 +1,10 @@
 import React from "react";
-import image5 from "../../../../src/constants/images/image 20.jpg";
-import image6 from "../../../../src/constants/images/image 21.png";
+import image5 from "../../../../../src/constants/images/image 20.jpg";
+import image6 from "../../../../../src/constants/images/image 21.png";
 
-import chef from "../../../../src/constants/images/chef.png";
-import onion from "../../../../src/constants/images/onion.png";
-import image27 from "../../../../src/constants/images/image 27.png";
+import chef from "../../../../../src/constants/images/chef.png";
+import onion from "../../../../../src/constants/images/onion.png";
+import image27 from "../../../../../src/constants/images/image 27.png";
 
 const Chef = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
-import FacebookSvg from '../../../constants/icons/facebook.svg';
-import TwitterSvg from '../../../constants/icons/twitter.svg';
-import InstagramSvg from '../../../constants/icons/instagram.svg';
+import FacebookSvg from '../../../../constants/icons/facebook.svg';
+import TwitterSvg from '../../../../constants/icons/twitter.svg';
+import InstagramSvg from "../../../../constants/icons/instagram.svg"
 
 const Navbar = () => {
   return (

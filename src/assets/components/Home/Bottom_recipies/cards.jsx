@@ -1,6 +1,6 @@
 import React from "react";
-import forkKnife from '../../../constants/icons/forkKnife.svg';
-import clock from '../../../constants/icons/clock.svg';
+import forkKnife from '../../../../constants/icons/forkKnife.svg';
+import clock from '../../../../constants/icons/clock.svg';
 import Button from '../Buttons/buttons'
 
 const RecipeCard = ({ imageSrc, title, time, type }) => {

@@ -13,27 +13,22 @@ const RecipeCard = ({ imgSrc, title, timeText, buttonLabel, buttonText }) => {
         <h3 className="font-inter font-bold text-[24px]">{title}</h3>
         
 
-        <Button
-          className="absolute w-[73px] h-[17px] top-[10px] left-[138px] bg-[#E7F9FD] text-black text-[14px] font-inter font-semibold"
+        <button
+          className="absolute w-[73px] h-[17px] top-[70px] left-[138px] bg-[#E7F9FD] text-black text-[14px] font-inter font-semibold"
         >
           <img
             src={buttonText}
             alt="Icon"
-            style={{
-              width: '24px',
-              height: '24px',
-              marginRight: '8px',
-            }}
           />
           {timeText}
-        </Button>
+        </button>
         
         {/* Second button */}
-        <Button
+        <button
           className="absolute w-[40px] h-[17px] top-[2090px] left-[269px] bg-[#E7F9FD] text-black text-[14px] font-inter font-semibold leading-[16.94px] tracking-[-0.02em] border-0 cursor-pointer flex items-center justify-center"
         >
           {buttonLabel}
-        </Button>
+        </button>
       </div>
     </div>
   );

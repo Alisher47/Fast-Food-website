@@ -1,10 +1,10 @@
 import React from "react";
-import image4 from "../../../../src/constants/images/image 25.jpg";
-import image5 from "../../../../src/constants/images/image 20.jpg";
-import image7 from '../../../../src/constants/images/image 22.png';
-import image8 from "../../../../src/constants/images/image 23.png";
-import image9 from "../../../../src/constants/images/image 24.png";
-import image6 from "../../../../src/constants/images/image 21.png";
+import image4 from "../../../../../src/constants/images/image 25.jpg";
+import image5 from "../../../../../src/constants/images/image 20.jpg";
+import image7 from '../../../../../src/constants/images/image 22.png';
+import image8 from "../../../../../src/constants/images/image 23.png";
+import image9 from "../../../../../src/constants/images/image 24.png";
+import image6 from "../../../../../src/constants/images/image 21.png";
 const Categories = () => {
   return (
     <div>

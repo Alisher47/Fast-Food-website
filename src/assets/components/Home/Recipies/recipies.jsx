@@ -1,14 +1,14 @@
 import React from 'react';
-import burger from "../../../../src/constants/images/image 26.jpg";
-import fish from "../../../../src/constants/images/fish.jpg";
-import strawberry from "../../../../src/constants/images/cake.jpg";
-import salad from '../../../../src/constants/images/salad.png';
-import cheese from '../../../../src/constants/images/cheese.png';
-import cake from '../../../../src/constants/images/cake2.png';
-import chicken from '../../../../src/constants/images/chicken.png';
-import pasta from '../../../../src/constants/images/pasta.png';
-import image2 from "../../../../src/constants/images/Vector.jpg";
-import pic from '../../../../src/constants/images/pic.png';
+import burger from "../../../../../src/constants/images/image 26.jpg";
+import fish from "../../../../../src/constants/images/fish.jpg";
+import strawberry from "../../../../../src/constants/images/cake.jpg";
+import salad from '../../../../../src/constants/images/salad.png';
+import cheese from '../../../../../src/constants/images/cheese.png';
+import cake from '../../../../../src/constants/images/cake2.png';
+import chicken from '../../../../../src/constants/images/chicken.png';
+import pasta from '../../../../../src/constants/images/pasta.png';
+import image2 from "../../../../../src/constants/images/Vector.jpg";
+import pic from '../../../../../src/constants/images/pic.png';
 import RecipeCard from './recipeCard.jsx';
 
 const Recipes = () => {

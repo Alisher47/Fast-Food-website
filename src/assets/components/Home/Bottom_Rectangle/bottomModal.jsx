@@ -1,8 +1,8 @@
 import React from 'react'
 import Button from '../Buttons/buttons'
-import plate from '../../../../src/constants/images/Photo-plate.png';
-import plant from '../../../../src/constants/images/plant.png';
-import vegetables from '../../../../src/constants/images/vegetables.png';
+import plate from '../../../../../src/constants/images/Photo-plate.png';
+import plant from '../../../../../src/constants/images/plant.png';
+import vegetables from '../../../../../src/constants/images/vegetables.png';
 const Modal = () => {
   return (
     <div>
