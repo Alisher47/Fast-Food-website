@@ -1,42 +1,24 @@
 import React from 'react'
 import IngredientList from './ingredientList'
+import ingredients from './constant'
+import OtherRecipies from './otherRecipies'
+import otherRecipes from './constant'
+
 const Ingredients = () => {
-  
-  const ingredients = [
-    {
-        title: "For main Dish",
-    },
-    {
-        listData: "Lorem ipsum dolor sit amet",
-    },
-    {
-        listData: "Lorem ipsum dolor sit amet",
-    },
-    {
-        listData: "Lorem ipsum dolor sit amet",
-    },
-    {
-        listData: "Lorem ipsum dolor sit amet",
-    },
-    {
-        listData: "Lorem ipsum dolor sit amet",
-    },
-  ]
-
-
     return (
-   <div className='flex flex-wrap gap-4 top-[5291px]'>
-     {ingredients.map((ingredient, index) => {
-       <IngredientList
-       key={index}
-       title={ingredient.title}
-       listData={ingredient.listData}
-       
-       />
-     })}
-    
-   </div>
-  )
+    <div>
+      <div className="space-y-4"> 
+
+            <IngredientList 
+            //   key={index} 
+            //   listData={ingredient.listData}
+            />
+            <OtherRecipies />
+           
+      </div>
+      </div>
+    )
 }
 
 export default Ingredients
+
