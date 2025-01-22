@@ -1,9 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import FacebookSvg from '../../../../constants/icons/facebook.svg';
 import TwitterSvg from '../../../../constants/icons/twitter.svg';
 import InstagramSvg from "../../../../constants/icons/instagram.svg"
 
 const Navbar = () => {
+ const navigate = useNavigate()
+
+ const hanldeBlog = () => {
+   navigate(`/blog`)
+ }
+ 
   return (
     <div>
       <div className="flex justify-between items-center px-4 py-2">
@@ -13,7 +20,7 @@ const Navbar = () => {
           <h3 className="cursor-pointer hover:text-gray-400 text-lg">
             Recipes
           </h3>
-          <h3 className="cursor-pointer hover:text-gray-400 text-lg">Blog</h3>
+          <h3 className="cursor-pointer hover:text-gray-400 text-lg" onClick={hanldeBlog}>Blog</h3>
           <h3 className="cursor-pointer hover:text-gray-400 text-lg">
             Contact
           </h3>

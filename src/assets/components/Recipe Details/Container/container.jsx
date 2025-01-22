@@ -3,6 +3,7 @@ import Button from '../../Home/Buttons/buttons';
 import plate from '../../../../constants/images/Photo-plate.png';
 import plant from '../../../../constants/images/plant.png';
 import vegetables from '../../../../constants/images/vegetables.png';
+import Footer from '../../Home/Footer/footer';
 const Modal = () => {
   return (
     <div>
@@ -38,6 +39,9 @@ const Modal = () => {
       </div>
       <div className="">
         <img src={vegetables} alt="Vegetables" className="absolute w-[300px] h-[300px] top-[4000px] left-[40px] rotate-[-30deg]" />
+      </div>
+      <div>
+      <Footer />
       </div>
 </div>
   )
