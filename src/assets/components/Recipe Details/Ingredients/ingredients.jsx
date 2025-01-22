@@ -1,24 +1,33 @@
-import React from 'react'
-import IngredientList from './ingredientList'
-import ingredients from './constant'
-import OtherRecipies from './otherRecipies'
-import otherRecipes from './constant'
+import React from "react";
+import IngredientList from "./ingredientList";
+import OtherRecipies from "./otherRecipies";
+import { INGREDIENTS } from "./constant";
+import { SAUCELISTS } from "./constant";
+import SauceList from "./sauceList";
 
 const Ingredients = () => {
-    return (
+  return (
     <div>
-      <div className="space-y-4"> 
+      <div className="space-y-4">
+        {INGREDIENTS.map((INGREDIENT) => {
+          return <IngredientList listData={INGREDIENT.listData} />;
+        })}
 
-            <IngredientList 
-            //   key={index} 
-            //   listData={ingredient.listData}
+        <OtherRecipies />
+      <div>
+        {SAUCELISTS.map((SAUCELIST, index) => {
+          return (
+            <SauceList 
+            key={index}
+            sauceData={SAUCELIST.sauceData}
             />
-            <OtherRecipies />
-           
+          )
+        })} 
+  
+        </div>
       </div>
-      </div>
-    )
-}
+    </div>
+  );
+};
 
-export default Ingredients
-
+export default Ingredients;
