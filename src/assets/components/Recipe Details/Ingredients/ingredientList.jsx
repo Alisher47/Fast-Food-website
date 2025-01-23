@@ -1,39 +1,42 @@
 import React from "react";
 
-const ingredientList = ({listData}) => {
+const IngredientList = ({ listData }) => {
   return (
-    <div>
-      <div className=" top-[1273px] w-[184px] h-[44px] left-[80px] font-inter font-semibold text-[36px] ">
-        <h3>Ingredients</h3>
-        <div className=" w-[144px] h-[29px] top-[100px] text-[20px] font-inter font-semibold">
-          <h1>For main dish</h1>
-          <div className=" w-[206px] h-[28px] top-[33px] left-[128px] text-[16px] font-inter font-semibold"></div>
+    <div className="px-6 py-4">
+      {/* Ingredients Title - Align Left */}
+      <div className="mb-4">
+        <h3 className="text-3xl font-semibold text-left">Ingredients</h3>
+      </div>
+
+      {/* For main dish section - Align Left */}
+      <div className="mb-6">
+        <h1 className="text-2xl font-semibold text-left">For main dish</h1>
+      </div>
+
+      {/* Ingredient List - Align Left */}
+      <div className="space-y-4 ml-6">
+        <div className="flex items-center space-x-2">
+          <input type="checkbox" className="w-5 h-5" />
+          <span className="text-lg">{listData}</span>
+        </div>
+
+        <div className="flex items-center space-x-2">
+          <input type="checkbox" className="w-5 h-5" />
+          <span className="text-lg">{listData}</span>
+        </div>
+
+        <div className="flex items-center space-x-2">
+          <input type="checkbox" className="w-5 h-5" />
+          <span className="text-lg">{listData}</span>
+        </div>
+
+        <div className="flex items-center space-x-2">
+          <input type="checkbox" className="w-5 h-5" />
+          <span className="text-lg">{listData}</span>
         </div>
       </div>
-      <div className=" top-[1450px] w-[24px] h-[24px]">
-            <input type="checkbox" name="checkbox" id="" 
-            />
-          </div>
-          <div className=" top-[1550px] w-[24px] h-[24px]">
-            <input type="checkbox" name="checkbox" id="" 
-            />
-          </div>
-          <div className=" left-[170px] top-[1450px] text-[18px]">
-          {listData}
-          </div>
-          <div className=" left-[170px] top-[1550px] text-[18px]">
-          {listData}
-          </div>
-          <input type="checkbox" name="checkbox" id="" className="  top-[1660px] left-[120px]"/>
-          <div className=" left-[170px] top-[1650px] text-[18px]">
-          {listData}
-          </div>
-          <input type="checkbox" name="checkbox" id="" className="  top-[1780px] left-[120px]"/>
-          <div className=" left-[170px] top-[1779px] text-[18px]">
-          {listData}
-          </div>
     </div>
   );
 };
 
-export default ingredientList;
+export default IngredientList;

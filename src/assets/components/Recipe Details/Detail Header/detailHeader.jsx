@@ -1,37 +1,50 @@
-import React from 'react'
+import React from 'react';
 import PrinterSvg from '../../../../constants/icons/printer.svg';
 import ShareSvg from '../../../../constants/icons/Share.svg';
 import group from '../../../../constants/images/group.png';
 import DetailCard from './detailCard';
 
-const detailHeader = ({title, imageSrc}) => {
+const DetailHeader = ({ title, imageSrc }) => {
   return (
-    <div>
-       <div className=' w-[700px] h-[77px] top-[200px] left-[80px] font-inter font-semibold text-[46px]'>
-        <h1>{title}</h1>
-       </div>
-       <div>
-        <img src={group} alt="" 
-        className=' w-[700px] h-[50px] top-[315px] left-[80px]'/>
-       </div>
-       <div className=' w-[80px] h-[80px] top-[250px] left-[1168px] bg-[#E7FAFE] rounded-[50px]'>
-             <img src={PrinterSvg} 
-             alt=""
-             className=' w-[24px] h-[24px] top-[28px] left-[28px]'
-             />
-       </div>
-       <div className=' w-[80px] h-[80px] top-[250px] left-[1280px] bg-[#E7FAFE] rounded-[50px]'>
-             <img src={ShareSvg} 
-             alt=""
-             className=' w-[24px] h-[24px] top-[28px] left-[28px]'
-             />
-       </div>
-       <div className=' w-[840px] h-[600px] top-[429px] left-[80px] '>
-          <img src={imageSrc} alt="" />
-       </div>
-     <DetailCard />
-    </div>
-  )
-}
+    <div className="px-4 py-6">
+      {/* Title and Action Buttons Section */}
+      <div className="flex items-center justify-between mb-6">
+        <h1 className="font-inter font-semibold text-[46px]">{title}</h1>
 
-export default detailHeader
+        {/* Action Buttons (Printer and Share) */}
+        <div className="flex space-x-4">
+          <div className="w-[80px] h-[80px] bg-[#E7FAFE] rounded-full flex justify-center items-center">
+            <img src={PrinterSvg} alt="Print" className="w-[24px] h-[24px]" />
+          </div>
+          <div className="w-[80px] h-[80px] bg-[#E7FAFE] rounded-full flex justify-center items-center">
+            <img src={ShareSvg} alt="Share" className="w-[24px] h-[24px]" />
+          </div>
+        </div>
+      </div>
+
+      {/* Group Image Section */}
+      <div className="mb-6 mt-16">
+        <img 
+          src={group} 
+          alt="Group" 
+          className="w-[600px] h-[40px] mx-auto ml-2" 
+        />
+      </div>
+
+      <div className="flex mb-6 mt-16">
+        <img 
+          src={imageSrc} 
+          alt="Recipe" 
+          className="w-[915px] h-[623px]" 
+        />
+        
+        {/* DetailCard aligned to the right of the image with same height and width */}
+        <div className="ml-8 w-[915px] h-[623px]">
+          <DetailCard />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default DetailHeader;

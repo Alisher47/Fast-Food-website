@@ -2,7 +2,6 @@ import React from 'react';
 import clock from '../../../../constants/icons/clock.svg';
 import forkKnife from '../../../../constants/icons/forkKnife.svg';
 import Button from '../../Home/Buttons/buttons';
-import Footer from '../../Home/Footer/footer'
 
 const Data = ({ imageSrc, title, type, time }) => {
   return (

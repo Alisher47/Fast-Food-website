@@ -1,4 +1,4 @@
-import fruits from '../../../../constants/images/fruits.png';
+import fruits from '../../../../constants/images/fruits.png'
 import burger2 from '../../../../constants/images/burger2.png';
 import rice from '../../../../constants/images/rice.png';
 import meat from '../../../../constants/images/meat.png';

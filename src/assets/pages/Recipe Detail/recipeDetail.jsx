@@ -6,7 +6,7 @@ import OtherRecipies from '../../components/Recipe Details/Ingredients/otherReci
 import DirectionData from '../../components/Recipe Details/Directions/directionData'
 import OtherRecipe from '../../components/Recipe Details/Other Recipies/otherRecipe'
 import Container from '../../components/Recipe Details/Container/container'
-import Footer from '../../components/Home/Footer/footer'
+
 
 
 
@@ -14,7 +14,7 @@ import Footer from '../../components/Home/Footer/footer'
 const recipeDetail = () => {
 
   return (
-    <div>
+    <div className='overflow-visible'>
       <Navbar />
      
      <RecipeHeader />
