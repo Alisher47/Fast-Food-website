@@ -4,7 +4,6 @@ import Button from '../Buttons/buttons';
 const RecipeCard = ({ imgSrc, title, timeText, buttonLabel, buttonText }) => {
   return (
     <div className="w-[350px] h-[450px] bg-[#E7F9FD] rounded-[30px] p-4 flex flex-col items-center">
-      {/* Image Section */}
       <div className="w-full h-[250px] mb-4">
         <img
           src={imgSrc}
@@ -13,11 +12,9 @@ const RecipeCard = ({ imgSrc, title, timeText, buttonLabel, buttonText }) => {
         />
       </div>
 
-      {/* Text and Buttons Section */}
       <div className="text-center">
         <h3 className="font-inter font-bold text-[24px] mb-4">{title}</h3>
 
-        {/* Time Button */}
         <Button className="w-[140px] h-[40px] bg-[#E7F9FD] text-black text-[14px] font-inter font-semibold rounded-[16px] flex items-center justify-center mb-2">
           <img
             src={buttonText}
@@ -27,7 +24,6 @@ const RecipeCard = ({ imgSrc, title, timeText, buttonLabel, buttonText }) => {
           {timeText}
         </Button>
 
-        {/* Label Button */}
         <Button className="w-[140px] h-[40px] bg-black text-white text-[14px] font-inter font-semibold rounded-[16px]">
           {buttonLabel}
         </Button>

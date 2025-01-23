@@ -19,7 +19,7 @@ const recipeData = [
     { imgSrc: cake, title: 'Fruit PanCake with Orange & Blueberry', timeText: '30 Minutes', buttonLabel: 'Sweet', buttonText: image2 },
     { imgSrc: chicken, title: 'The Best Easy One Pot Chicken and Rice', timeText: '30 Minutes', buttonLabel: 'Snack', buttonText: image2 },
     { imgSrc: pasta, title: 'The Cremiest Creamy Chicken and Bacon Pasta', timeText: '30 Minutes', buttonLabel: 'Noodles', buttonText: image2 },
-    { imgSrc: pic, title: 'Some Title', timeText: '30 Minutes', buttonLabel: 'Noodles', buttonText: image2 }, // Example for the last image
+    { imgSrc: pic, title: 'Some Title', timeText: '30 Minutes', buttonLabel: 'Noodles', buttonText: image2 }, 
   ];
 
   export default recipeData

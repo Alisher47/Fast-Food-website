@@ -13,12 +13,11 @@ const Navbar = () => {
 
   return (
     <div className="">
-      {/* Navbar container */}
+     
       <div className="flex justify-between items-center px-6 py-4">
-        {/* Logo */}
+
         <h1 className="font-lobster text-3xl">FoodieLand</h1>
 
-        {/* Navigation Links */}
         <div className="flex space-x-8">
           <h3 className="cursor-pointer hover:text-gray-400 text-lg">Home</h3>
           <h3 className="cursor-pointer hover:text-gray-400 text-lg">Recipes</h3>

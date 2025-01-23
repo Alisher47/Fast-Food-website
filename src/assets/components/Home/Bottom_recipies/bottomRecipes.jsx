@@ -11,17 +11,25 @@ const BottomRecipes = () => {
   };
 
   return (
-    <div>
-      <div className="top-[5115px] left-[80px] w-[507px] h-[116px] font-inter font-semibold text-[48px] leading-[58.09px] tracking-[-0.04em]">
-        Try this delicious recipe to make your day
-      </div>
-      <div className="top-[5145px] left-[740px] w-[620px] h-[56px] font-inter text-[16px]">
-        Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim
+    <div className="container mx-auto px-6 py-16">
+      <div className="flex justify-between items-center mb-8">
+        <div className="w-[60%]">
+          <h2 className="text-[48px] font-semibold font-inter leading-tight">
+            Try this delicious recipe <br/> to make your day
+          </h2>
+        </div>
+
+        <div className="w-[40%] text-right">
+          <p className="text-[16px] font-inter">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam.
+          </p>
+        </div>
       </div>
 
-      <div className="flex flex-wrap gap-4 top-[5291px]">
+      <div className="px-4 py-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6">
         {recipes.map((recipe) => (
-          <div key={recipe.id} onClick={() => handleDetail(recipe.id)} style={{ cursor: 'pointer' }}>
+          <div key={recipe.id} className="mb-20" onClick={() => handleDetail(recipe.id)}> 
             <RecipeCards
               imageSrc={recipe.imageSrc}
               title={recipe.title}
@@ -31,6 +39,7 @@ const BottomRecipes = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };

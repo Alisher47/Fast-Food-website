@@ -8,8 +8,8 @@ import image6 from "../../../../../src/constants/images/image 21.png";
 
 const Categories = () => {
   return (
-    <div className="mt-[150px] px-12 w-full max-w-[1280px] mx-auto"> {/* Center container and make width responsive */}
-      {/* Header Section */}
+    <div className="mt-[150px] px-12 w-full max-w-[1280px] mx-auto">
+  
       <div className="flex justify-between items-center mb-8">
         <div className="text-[32px] font-semibold">Categories</div>
         <button className="text-[16px] text-black bg-[#E7FAFE] h-[60px] w-[200px] rounded-[16px]">
@@ -17,7 +17,6 @@ const Categories = () => {
         </button>
       </div>
 
-      {/* Categories Section */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8">
         <div className="flex flex-col items-center justify-center w-full">
           <img

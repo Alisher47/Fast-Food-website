@@ -1,58 +1,61 @@
 import React from "react";
 import image5 from "../../../../../src/constants/images/image 20.jpg";
 import image6 from "../../../../../src/constants/images/image 21.png";
-
 import chef from "../../../../../src/constants/images/chef.png";
 import onion from "../../../../../src/constants/images/onion.png";
 import image27 from "../../../../../src/constants/images/image 27.png";
 
 const Chef = () => {
   return (
-    <div>
-      <img
-        src={chef}
-        alt="Chef"
-        className="top-[3234px] left-[650px] w-[660px] h-[597px] object-cover rounded-[15px]"
-      />
+    <div className="px-8 py-16">
+      <div className="flex justify-between items-center mb-8">
+      
+        <div className="w-[50%]">
+          <h2 className="text-[48px] font-inter font-semibold mb-4">
+            Everyone can be a chef in their own kitchen
+          </h2>
+          <p className="text-[16px] font-inter max-w-[508px] mb-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ab
+            maxime nemo mollitia delectus ut quos quia minima exercitationem.
+          </p>
+         
+          <button className="h-[60px] w-[180px] rounded-[16px] bg-black text-white">
+            Learn More
+          </button>
+        </div>
 
-      <div>
+        {/* Chef Image */}
+        <div className="w-[45%]">
+          <img
+            src={chef}
+            alt="Chef"
+            className="w-full h-[597px] object-cover rounded-[15px]"
+          />
+        </div>
+      </div>
+
+      <div className="flex justify-start gap-6 mb-36">
         <img
           src={image5}
           alt="Image 5"
-          className="top-[3401px] left-[1244px] w-[80px] h-[80px] rounded-[15px]"
+          className="w-[80px] h-[80px] rounded-[15px]"
         />
-      </div>
-      <div>
         <img
           src={onion}
-          alt="onion"
-          className="top-[3331px] w-[50px] h-[50px] left-[1130px]"
+          alt="Onion"
+          className="w-[50px] h-[50px] rounded-[15px]"
         />
-      </div>
-      <div>
         <img
           src={image6}
-          alt=""
-          className="   top-[3334px] w-[80px] h-[80px] left-[752px]"
+          alt="Image 6"
+          className="w-[80px] h-[80px] rounded-[15px]"
         />
-      </div>
-      <div>
         <img
           src={image27}
-          alt=""
-          className="top-[3657px] w-[50px] h-[50px] left-[684px]"
+          alt="Image 27"
+          className="w-[50px] h-[50px] rounded-[15px]"
         />
       </div>
-      <div className="top-[3403px] left-[80px] w-[526px] h-[116px] font-inter font-semibold text-[48px] leading-[58.09px] tracking-[-0.04em]">
-        Everyone can be a chef in their own kitchen
-      </div>
-      <p className="top-[3543px] w-[508px] h-[84px] left-[80px] font-inter">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ab maxime
-        nemo mollitia delectus ut quos quia minima exercitationem
-      </p>
-      <button className="top-[3699px] h-[60px] w-[180px] left-[80px] rounded-[16px] bg-black text-white">
-        Learn More
-      </button>
     </div>
   );
 };
