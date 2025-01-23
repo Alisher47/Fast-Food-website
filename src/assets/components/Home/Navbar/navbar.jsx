@@ -5,40 +5,43 @@ import TwitterSvg from '../../../../constants/icons/twitter.svg';
 import InstagramSvg from "../../../../constants/icons/instagram.svg"
 
 const Navbar = () => {
- const navigate = useNavigate()
+  const navigate = useNavigate();
 
- const hanldeBlog = () => {
-   navigate(`/blog`)
- }
- 
+  const hanldeBlog = () => {
+    navigate(`/blog`);
+  };
+
   return (
-    <div>
-      <div className="flex justify-between items-center px-4 py-2">
-        <h1 className="font-lobster text-3xl ml-4">FoodieLand</h1>
-        <div className="flex space-x-16 flex-grow justify-center">
+    <div className="">
+      {/* Navbar container */}
+      <div className="flex justify-between items-center px-6 py-4">
+        {/* Logo */}
+        <h1 className="font-lobster text-3xl">FoodieLand</h1>
+
+        {/* Navigation Links */}
+        <div className="flex space-x-8">
           <h3 className="cursor-pointer hover:text-gray-400 text-lg">Home</h3>
-          <h3 className="cursor-pointer hover:text-gray-400 text-lg">
-            Recipes
+          <h3 className="cursor-pointer hover:text-gray-400 text-lg">Recipes</h3>
+          <h3
+            className="cursor-pointer hover:text-gray-400 text-lg"
+            onClick={hanldeBlog}
+          >
+            Blog
           </h3>
-          <h3 className="cursor-pointer hover:text-gray-400 text-lg" onClick={hanldeBlog}>Blog</h3>
-          <h3 className="cursor-pointer hover:text-gray-400 text-lg">
-            Contact
-          </h3>
-          <h3 className="cursor-pointer hover:text-gray-400 text-lg">
-            About Us
-          </h3>
+          <h3 className="cursor-pointer hover:text-gray-400 text-lg">Contact</h3>
+          <h3 className="cursor-pointer hover:text-gray-400 text-lg">About Us</h3>
         </div>
 
-        <div className="flex space-x-6 ml-4">
-          <img src={FacebookSvg} alt="" />
-          <img src={TwitterSvg} alt="" />
-          <img src={InstagramSvg} alt="" />
+        {/* Social Media Icons */}
+        <div className="flex space-x-6">
+          <img src={FacebookSvg} alt="Facebook" className="w-6 h-6" />
+          <img src={TwitterSvg} alt="Twitter" className="w-6 h-6" />
+          <img src={InstagramSvg} alt="Instagram" className="w-6 h-6" />
         </div>
-        <div
-          className="w-full absolute top-[calc(110px)] left-1/2 transform -translate-x-1/2 bg-slate-300 h-[1px] rounded-full"
-          style={{ width: "1440px" }}
-        ></div>
       </div>
+
+      {/* Horizontal Line */}
+      <div className="w-full bg-slate-300 h-[1px] mt-[30px]"></div>
     </div>
   );
 };

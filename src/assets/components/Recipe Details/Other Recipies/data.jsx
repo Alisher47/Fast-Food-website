@@ -7,7 +7,7 @@ import Footer from '../../Home/Footer/footer'
 const Data = ({ imageSrc, title, type, time }) => {
   return (
     <div>
-   <div className='absolute w-[468px] h-[44px] top-[4500px] left-[486px] font-inter font-semibold text-[32px] whitespace-nowrap'>
+   <div className='  w-[468px] h-[44px] top-[4500px] left-[486px] font-inter font-semibold text-[32px] whitespace-nowrap'>
     <h3>You may like these recipes too</h3>
  </div>
    <div className="relative top-[4500px] w-[290px] h-[400px] p-4 rounded-[20px] left-[80px]">

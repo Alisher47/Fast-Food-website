@@ -12,10 +12,10 @@ const BottomRecipes = () => {
 
   return (
     <div>
-      <div className="absolute top-[5115px] left-[80px] w-[507px] h-[116px] font-inter font-semibold text-[48px] leading-[58.09px] tracking-[-0.04em]">
+      <div className="top-[5115px] left-[80px] w-[507px] h-[116px] font-inter font-semibold text-[48px] leading-[58.09px] tracking-[-0.04em]">
         Try this delicious recipe to make your day
       </div>
-      <div className="absolute top-[5145px] left-[740px] w-[620px] h-[56px] font-inter text-[16px]">
+      <div className="top-[5145px] left-[740px] w-[620px] h-[56px] font-inter text-[16px]">
         Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim
       </div>
 

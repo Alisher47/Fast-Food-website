@@ -14,7 +14,7 @@ const Footer = () => {
           <h3 className="cursor-pointer hover:text-gray-400 text-lg">About Us</h3>
         </div>
       </div>
-       <div className='absolute left-[35px]'>Lorem ipsum dolor sit amet, consectetuipisicing elit, </div>
+       <div className='  left-[35px]'>Lorem ipsum dolor sit amet, consectetuipisicing elit, </div>
     </div>
   )
 }

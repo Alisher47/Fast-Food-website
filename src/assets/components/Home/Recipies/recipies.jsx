@@ -1,20 +1,20 @@
 import React from 'react';
-import RecipeCard from './recipeCard.jsx';
-import recipeData from './constants.js';
-const Recipes = () => {
-  
+import RecipeCard from './recipeCard';
+import recipeData from './constants';
 
+const Recipes = () => {
   return (
-    <div>
-      <div className="absolute top-[1450px] left-[457px] w-[526px] h-[58px] font-inter font-semibold text-[48px] leading-[58.09px] tracking-[-0.04em]">
+    <div className="px-8 mt-16">
+      <div className="text-center text-[48px] font-inter font-semibold mb-4">
         Simple and tasty recipes
       </div>
-      <div className="absolute top-[1557px] left-[364px] w-[706px] h-[56px] font-inter font-normal text-[16px] leading-[28px] text-center">
+      <div className="text-center text-[16px] font-inter mb-12">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
       </div>
-      <div className="flex flex-wrap justify-start absolute top-[1709px] left-[50px] w-full">
+
+      <div className="flex flex-wrap justify-between gap-8">
         {recipeData.map((recipe, index) => (
-          <div key={index} className=" w-[400px] h-[450px] bg-[#E7F9FD] rounded-[30px] mr-[80px] gap-4">
+          <div key={index} className="w-[350px]">
             <RecipeCard
               imgSrc={recipe.imgSrc}
               title={recipe.title}
