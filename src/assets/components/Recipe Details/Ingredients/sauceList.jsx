@@ -1,25 +1,28 @@
-import React from 'react'
+import React from 'react';
 
-const SauceList = ({sauceData}) => {
+const SauceList = ({ sauceData }) => {
   return (
-    <div>
-      <div>
-      <h3 className='  top-[1900px] w-[146px] h-[29px] left-[100px] text-[22px] font-inter font-semibold'>For the sauce</h3>
-      </div>
-      <input type="checkbox" name="checbox" id="" className='  top-[2000px] left-[132px]'/>
-      <div className='   h-[22px] top-[2000px] left-[170px] text-[18px] '>
-        {sauceData}
-      </div>
-      <input type="checkbox" name="checbox" id="" className='  top-[2120px] left-[132px]'/>
-      <div className='   h-[22px] top-[2120px] left-[170px] text-[18px] '>
-        {sauceData}
-      </div>
-      <input type="checkbox" name="checbox" id="" className='  top-[2250px] left-[132px]'/>
-      <div className='   h-[22px] top-[2250px] left-[170px] text-[18px] '>
-        {sauceData}
+    <div className="px-6 py-4">
+      <h3 className="text-[24px] font-semibold text-left mb-6">For the sauce</h3> 
+
+      <div className="ml-6 mb-6 space-y-16"> 
+        <div className="flex items-center space-x-3">
+          <input type="checkbox" className="w-6 h-6" />
+          <span className="text-xl">{sauceData}</span>
+        </div>
+
+        <div className="flex items-center space-x-3">
+          <input type="checkbox" id="sauce2" className="w-6 h-6" />
+          <label htmlFor="sauce2" className="text-xl">{sauceData}</label>
+        </div>
+
+        <div className="flex items-center space-x-3">
+          <input type="checkbox" id="sauce3" className="w-6 h-6" />
+          <label htmlFor="sauce3" className="text-xl">{sauceData}</label>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SauceList
+export default SauceList;
