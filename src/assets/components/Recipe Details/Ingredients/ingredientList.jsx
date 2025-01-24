@@ -1,5 +1,5 @@
 import React from "react";
-import OtherRecipies from "./otherRecipies";
+
 const IngredientList = ({ listData }) => {
   return (
     <div className="px-6 py-4">
@@ -33,7 +33,6 @@ const IngredientList = ({ listData }) => {
           <span className="text-lg">{listData}</span>
         </div>
       </div>
-      <OtherRecipies />
     </div>
   );
 };

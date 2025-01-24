@@ -30,12 +30,13 @@ import image2 from "../constants/images/Vector.jpg";
 import pic from '../constants/images/pic.png';
 import group2 from '../../../../constants/images/group2.png';
 import navbar from '../constants/images/navbar.png';
+import vegetable from '../constants/images/vegetable.png';
 
 
 
 export {fruits, burger2, rice, meat, honey, sandwich, spicy, mushroom,
     plant, plate, vegetables, image4, image5, image6, image7, image8, image9,
     burger, fish, strawberry, salad, cheese, cake, chicken, pasta, image2, pic,
-    image1, image, group2, navbar
+    image1, image, group2, navbar, vegetable
 
 }

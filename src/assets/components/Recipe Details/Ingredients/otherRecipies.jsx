@@ -7,13 +7,10 @@ import pic from '../../../../constants/images/pic.png';
 const OtherRecipies = () => {
   return (
     <div className="px-6 py-4">
-      {/* "Other Recipes" Title */}
       <div className="mb-4 mt-[100px] text-right">
         <h3 className="text-[36px] font-semibold">Other Recipes</h3>
       </div>
-
-      {/* Recipes List */}
-      <div className="space-y-8 ml-6"> {/* Decreased space from 16 to 8 */}
+      <div className="space-y-8 ml-6"> 
 
         {/* Recipe 1 */}
         <div className="flex justify-end items-center space-x-6">

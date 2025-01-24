@@ -6,7 +6,7 @@ import vegetables from '../../../../../src/constants/images/vegetables.png';
 
 const Modal = () => {
   return (
-    <div className="bg-[#E7F9FD] rounded-[60px] p-8 md:p-12 relative">
+    <div className="bg-[#E7F9FD] rounded-[60px] p-8 md:p-12 relative h-[442px]">
   
       <div className="font-inter font-bold text-[32px] text-center mb-4">
         Deliciousness to your inbox
