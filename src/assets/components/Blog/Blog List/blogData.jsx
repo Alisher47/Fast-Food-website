@@ -8,7 +8,6 @@ const BlogData = ({ title, imageSrc, text }) => {
         <img src={imageSrc} alt={title} className="w-full h-full object-cover rounded-[20px]" />
       </div>
 
-  
       <div className="ml-4 w-[375px]">
         <h3 className="font-inter font-semibold text-[24px] leading-[26px] tracking-[-4%] mt-6 whitespace-nowrap">{title}</h3>
         <p className="text-[16px] text-gray-600 mt-4">{text}</p>
