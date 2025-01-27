@@ -31,12 +31,14 @@ import pic from '../constants/images/pic.png';
 import group2 from '../../../../constants/images/group2.png';
 import navbar from '../constants/images/navbar.png';
 import vegetable from '../constants/images/vegetable.png';
+import images from '../constants/images/1234.png';
+import Layer from '../constants/images/Layer.png';
 
 
 
 export {fruits, burger2, rice, meat, honey, sandwich, spicy, mushroom,
     plant, plate, vegetables, image4, image5, image6, image7, image8, image9,
     burger, fish, strawberry, salad, cheese, cake, chicken, pasta, image2, pic,
-    image1, image, group2, navbar, vegetable
+    image1, image, group2, navbar, vegetable, images, Layer
 
 }
