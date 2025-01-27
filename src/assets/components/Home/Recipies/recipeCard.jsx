@@ -15,18 +15,14 @@ const RecipeCard = ({ imgSrc, title, timeText, buttonLabel, buttonText }) => {
       <div className="text-center">
         <h3 className="font-inter font-bold text-[24px] mb-4">{title}</h3>
 
-        <Button className="w-[140px] h-[40px] bg-[#E7F9FD] text-black text-[14px] font-inter font-semibold rounded-[16px] flex items-center justify-center mb-2">
+        <button className="w-[140px] h-[40px] bg-[#E7F9FD] text-black text-[14px] font-inter font-semibold rounded-[16px] flex items-center justify-center mb-2">
           <img
             src={buttonText}
             alt="Icon"
             className="w-[16px] h-[16px] mr-2"
           />
           {timeText}
-        </Button>
-
-        <Button className="w-[140px] h-[40px] bg-black text-white text-[14px] font-inter font-semibold rounded-[16px]">
-          {buttonLabel}
-        </Button>
+        </button>
       </div>
     </div>
   );

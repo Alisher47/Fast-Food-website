@@ -14,6 +14,10 @@ const Navbar = () => {
   const handleContact = () => {
     navigate(`/contact`)
   }
+ 
+  const handleAbout = () => {
+    navigate(`/about`)
+  }
 
   return (
     <div className="overflow-x-visible">
@@ -32,7 +36,7 @@ const Navbar = () => {
             Blog
           </h3>
           <h3 className="cursor-pointer hover:text-gray-400 text-lg" onClick={handleContact}>Contact</h3>
-          <h3 className="cursor-pointer hover:text-gray-400 text-lg">About Us</h3>
+          <h3 className="cursor-pointer hover:text-gray-400 text-lg" onClick={handleAbout}>About Us</h3>
         </div>
 
         

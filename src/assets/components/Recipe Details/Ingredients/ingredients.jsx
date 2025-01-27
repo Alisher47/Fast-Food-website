@@ -34,6 +34,10 @@ const Ingredients = () => {
           })
         }
       </div>
+
+      <div>
+        
+      </div>
     </div>
   );
 };
