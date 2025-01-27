@@ -5,26 +5,21 @@ import OtherRecipies from '../../Recipe Details/Ingredients/otherRecipies';
 
 const BlogList = () => {
   return (
-    <div className="px-4 py-8">
-   
-      <div className="flex gap-8">
-
-        <div className="flex-1">
-          <div className="space-y-8">
-            {BLOGSDATA.map((BLOGDATA, index) => (
-              <BlogData
-                key={index} 
-                title={BLOGDATA.title}
-                imageSrc={BLOGDATA.imageSrc}
-                text={BLOGDATA.text}
-              />
-            ))}
-          </div>
-        </div>
-
-        <div>
-          <OtherRecipies />
-        </div>
+    <div className="flex">
+      <div className="flex-1"> {/* This is the left side container */}
+        {BLOGSDATA.map((BLOGDATA) => {
+          return (
+            <BlogData 
+              key={BLOGDATA.title} // Always a good idea to add a unique key for mapping
+              title={BLOGDATA.title}
+              imageSrc={BLOGDATA.imageSrc}
+              text={BLOGDATA.text}
+            />
+          );
+        })}
+      </div>
+      <div className="ml-8 mt-4"> {/* Add top margin to OtherRecipies */}
+        <OtherRecipies />
       </div>
     </div>
   );
