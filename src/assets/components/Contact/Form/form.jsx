@@ -1,9 +1,12 @@
 import React from 'react';
 import Layer from '../../../../constants/images/Layer .png';
+import Container from '../../Home/Bottom_Rectangle/bottomModal'
+import OtherRecipe from '../../Recipe Details/Other Recipies/otherRecipe';
 
 const Form = () => {
   return (
-    <div className="mt-[80px] flex justify-center items-center space-x-16 mr-60">
+   <div>
+   <div className="mt-[80px] flex justify-center items-center space-x-16 mr-60">
       <img src={Layer} alt="Chef" className="w-[350px] h-auto" />
 
       <div className="w-[600px]">
@@ -64,6 +67,18 @@ const Form = () => {
           </button>
         </form>
       </div>
+    </div>
+    <div className='mt-40'>
+        <Container />
+    </div>
+    <div>
+        <div className='mt-40 font-inter font-semibold text-[36px] '>
+            <h3>Check out the delicious recipes</h3>
+        </div>
+        <div>
+        <OtherRecipe />
+        </div>
+    </div>
     </div>
   );
 };
