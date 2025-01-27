@@ -1,8 +1,11 @@
 import React from 'react';
+import Layer from '../../../../constants/images/Layer .png';
 
 const Form = () => {
   return (
-    <div className="mt-[80px] flex justify-end mr-64">
+    <div className="mt-[80px] flex justify-center items-center space-x-16 mr-60">
+      <img src={Layer} alt="Chef" className="w-[350px] h-auto" />
+
       <div className="w-[600px]">
         <form className="space-y-6">
           
