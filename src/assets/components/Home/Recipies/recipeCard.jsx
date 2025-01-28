@@ -29,20 +29,21 @@ const RecipeCard = ({ imgSrc, title, description, price }) => {
         />
       </div>
 
-      <div className="text-center flex flex-col items-center w-full">
+      <div className="text-center">
         <h3 className="font-inter font-bold text-[24px] mb-4 transition-colors duration-300 hover:text-blue-600">
           {title}
         </h3>
         
         {/* Simple price style */}
-        <h3 className="text-lg font-semibold text-white">{price}</h3>
+        <p className="text-[18px] font-inter font-semibold text-black">{price}</p>
         
-        <div className="w-full flex justify-end">
+        <div className="mt-4">
           <Button
             text="Add to Cart"
-            className="bg-black text-white font-inter text-[18px] font-semibold rounded-[16px] px-6 py-2"
+            className="bg-[#E7F9FD] text-black font-inter text-[18px] font-semibold rounded-[16px] hover:bg-black hover:text-white"
             onClick={addToCart} 
-          />
+          >
+          </Button>
         </div>
       </div>
     </div>

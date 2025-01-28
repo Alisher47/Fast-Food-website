@@ -19,8 +19,7 @@ const Recipes = () => {
               imgSrc={recipe.imgSrc}
               title={recipe.title}
               timeText={recipe.timeText}
-              buttonLabel={recipe.buttonLabel}
-              buttonText={recipe.buttonText}
+              price={recipe.price}
             />
           </div>
         ))}
