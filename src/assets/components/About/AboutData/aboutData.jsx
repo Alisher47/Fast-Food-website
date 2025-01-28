@@ -1,16 +1,16 @@
 import React from 'react'
-import Container from '../../Home/Bottom_Rectangle/bottomModal'
 
-const AboutData = ({title, text, bigtitle}) => {
+const AboutData = ({title, text, bigtitle, imageSrc}) => {
   return (
     <div>
-        <div className='mt-20 ml-48 font-inter font-semibold text-[24px]'>
+        <div className='mt-20 font-inter font-semibold text-[24px] text-left ml-[190px]'>
+            {imageSrc}
             <h3>{title}</h3>
         </div>
-        <div>
+        <div className='font-inter text-[16px] text-left ml-[190px] mt-6'>
             <p>{text}</p>
         </div>
-        <div>
+        <div className='font-inter text-[36px]'>
             <h3>{bigtitle}</h3>
         </div>
     </div>

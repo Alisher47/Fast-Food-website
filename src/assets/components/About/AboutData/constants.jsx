@@ -1,4 +1,4 @@
-
+import Direction from '../../../../constants/images/direction.png'
 
 const ABOUTS = [
     {
@@ -11,11 +11,12 @@ const ABOUTS = [
    },
    {
     title: "Do you cook at home on your days off?",
+    imageSrc: Direction,
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio. Nulla at congue diam, at dignissim turpis. Ut vehicula sed velit a faucibus. In feugiat vestibulum velit vel pulvinar. Fusce id mollis ex. Praesent feugiat elementum ex ut suscipit."
 
    },
    {
-    bigtitle: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.”"
+    bigtitle: "“Lorem ipsum dolor sit amet, consectetur adipiscing Curabitur ac ultrices odio.”"
    },
    {
     title: "What is the biggest misconception that people have about being a professional chef?",

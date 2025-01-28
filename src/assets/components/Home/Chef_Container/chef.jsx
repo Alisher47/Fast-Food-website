@@ -9,7 +9,7 @@ const Chef = () => {
   return (
     <div className="px-8 py-16">
       <div className="flex justify-between items-center mb-8">
-      
+        
         <div className="w-[50%]">
           <h2 className="text-[48px] font-inter font-semibold mb-4">
             Everyone can be a chef in their own kitchen
@@ -25,36 +25,35 @@ const Chef = () => {
         </div>
 
         {/* Chef Image */}
-        <div className="w-[45%]">
+        <div className="w-[45%] flex items-center justify-center relative">
           <img
             src={chef}
             alt="Chef"
             className="w-full h-[597px] object-cover rounded-[15px]"
           />
+          <div className="absolute flex gap-4 bottom-0 left-0 p-4">
+            <img
+              src={image5}
+              alt="Image 5"
+              className="w-[80px] h-[80px] rounded-[15px]"
+            />
+            <img
+              src={onion}
+              alt="Onion"
+              className="w-[50px] h-[50px] rounded-[15px]"
+            />
+            <img
+              src={image6}
+              alt="Image 6"
+              className="w-[80px] h-[80px] rounded-[15px]"
+            />
+            <img
+              src={image27}
+              alt="Image 27"
+              className="w-[50px] h-[50px] rounded-[15px]"
+            />
+          </div>
         </div>
-      </div>
-
-      <div className="flex justify-start gap-6 mb-36">
-        <img
-          src={image5}
-          alt="Image 5"
-          className="w-[80px] h-[80px] rounded-[15px]"
-        />
-        <img
-          src={onion}
-          alt="Onion"
-          className="w-[50px] h-[50px] rounded-[15px]"
-        />
-        <img
-          src={image6}
-          alt="Image 6"
-          className="w-[80px] h-[80px] rounded-[15px]"
-        />
-        <img
-          src={image27}
-          alt="Image 27"
-          className="w-[50px] h-[50px] rounded-[15px]"
-        />
       </div>
     </div>
   );
