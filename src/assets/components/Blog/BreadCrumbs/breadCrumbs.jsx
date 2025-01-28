@@ -16,14 +16,14 @@ const BreadCrumbs = () => {
 
     return (
         <div>
-            <div className="flex justify-center items-center mt-20"> {/* Adding top margin to buttons */}
+            <div className="flex justify-center items-center mt-20"> 
                 <div className="flex space-x-2">
                     {buttons.map((buttonId) => (
                         <button
                             key={buttonId}
                             onMouseEnter={() => handleMouseEnter(buttonId)}
                             onMouseLeave={handleMouseLeave}
-                            className={`border border-black w-16 h-16 rounded-[16px] transition-all duration-300 ${hoveredButton === buttonId
+                            className={`border border-gray-400 w-16 h-16 rounded-[16px] transition-all duration-300 text-[18px] font-inter ${hoveredButton === buttonId
                                     ? "bg-black text-white"
                                     : "bg-white text-black"
                                 }`}

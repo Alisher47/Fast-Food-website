@@ -5,6 +5,7 @@ import RecipeDetail from './assets/pages/Recipe Detail/recipeDetail';
 import About from './assets/pages/About/about';
 import Blog from './assets/pages/Blog/blog';
 import Contact from './assets/pages/Contact/contact';
+import Cart from './assets/pages/Add To Cart/cart';
 function App() {
   return (
     <Router>
@@ -14,6 +15,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/contact' element={<Contact />}/>
+        <Route path='/cart' element={<Cart />}  />
         
         </Routes>
     </Router>

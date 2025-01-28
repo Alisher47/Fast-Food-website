@@ -19,7 +19,7 @@ const Header = () => {
             className="w-full h-[60px] px-4 py-2 rounded-[24px] text-gray-700"
           />
           <Button
-            text="Subscribe"
+            text="Search"
             className="w-[160px] h-[60px] rounded-[16px] bg-black text-white ml-4"
           />
         </div>

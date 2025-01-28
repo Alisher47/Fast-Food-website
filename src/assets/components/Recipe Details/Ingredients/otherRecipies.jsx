@@ -12,7 +12,6 @@ const OtherRecipies = () => {
       </div>
       <div className="space-y-8 ml-6"> 
 
-        {/* Recipe 1 */}
         <div className="flex justify-end items-center space-x-6">
           <div className="w-[180px] h-[175px]">
             <img
@@ -26,7 +25,6 @@ const OtherRecipies = () => {
           </div>
         </div>
 
-        {/* Recipe 2 */}
         <div className="flex justify-end items-center space-x-6">
           <div className="w-[180px] h-[175px]">
             <img
@@ -40,8 +38,7 @@ const OtherRecipies = () => {
           </div>
         </div>
 
-        {/* Recipe 3 */}
-        <div className="flex justify-end items-center space-x-6">
+        <div className="flex justify-end items-center space-x-6 mr-9">
           <div className="w-[180px] h-[175px]">
             <img
               src={rice}
