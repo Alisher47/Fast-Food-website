@@ -5,11 +5,11 @@ import FacebookSvg from "../../../../constants/icons/facebook.svg";
 import TwitterSvg from "../../../../constants/icons/twitter.svg";
 import InstagramSvg from "../../../../constants/icons/instagram.svg";
 import { IoCartOutline } from "react-icons/io5";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const cartItemCount = 3;
-
+  const cartItemCount = useSelector((state) => state.cart.cartItemCount); 
   function handleHome(){
     navigate(`/`)
   }
@@ -117,23 +117,14 @@ const Navbar = () => {
           />
 
           {/* Cart Icon with Badge */}
-          <motion.div className="relative">
-            <IoCartOutline
-              className="w-8 h-8 cursor-pointer"
-              whileHover={{ scale: 1.2 }}
-              onClick={handleCart}
-            />
-            {cartItemCount > 0 && (
-              <motion.div
-                className="absolute -top-2 -right-2 w-5 h-5 bg-red-600 text-white text-xs font-bold rounded-full flex items-center justify-center"
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                transition={{ type: "spring", stiffness: 200 }}
-              >
-                {cartItemCount}
-              </motion.div>
-            )}
-          </motion.div>
+          <div className="relative">
+        <IoCartOutline className="w-8 h-8 cursor-pointer" />
+        {cartItemCount > 0 && (
+          <div className="absolute -top-2 -right-2 w-5 h-5 bg-red-600 text-white text-xs font-bold rounded-full flex items-center justify-center">
+            {cartItemCount} {/* Display the cart item count */}
+          </div>
+        )}
+      </div>
         </motion.div>
       </div>
 

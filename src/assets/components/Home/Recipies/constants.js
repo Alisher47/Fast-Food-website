@@ -11,15 +11,15 @@ import pic from '../../../../../src/constants/images/pic.png';
 
 
 const recipeData = [
-    { imgSrc: burger, title: 'Big and Juicy Wagyu Beef Cheese Burger', timeText: '30 Minutes', buttonLabel: 'Snack', buttonText: image2 },
-    { imgSrc: fish, title: 'Fresh Lime Roasted Salmon with ginger sauce', timeText: '30 Minutes', buttonLabel: 'Fish', buttonText: image2 },
-    { imgSrc: strawberry, title: 'Strawberry Oatmeal Pancake with Honey Syrup', timeText: '30 Minutes', buttonLabel: 'Breakfast', buttonText: image2 },
-    { imgSrc: salad, title: 'Fresh and Healthy Mixed Mayonese Salad', timeText: '30 Minutes', buttonLabel: 'Snack', buttonText: image2 },
-    { imgSrc: cheese, title: 'Chicken Meetballs with Cream Cheese', timeText: '30 Minutes', buttonLabel: 'Fish', buttonText: image2 },
-    { imgSrc: cake, title: 'Fruit PanCake with Orange & Blueberry', timeText: '30 Minutes', buttonLabel: 'Sweet', buttonText: image2 },
-    { imgSrc: chicken, title: 'The Best Easy One Pot Chicken and Rice', timeText: '30 Minutes', buttonLabel: 'Snack', buttonText: image2 },
-    { imgSrc: pasta, title: 'The Cremiest Creamy Chicken and Bacon Pasta', timeText: '30 Minutes', buttonLabel: 'Noodles', buttonText: image2 },
-    { imgSrc: pic, title: 'Some Title', timeText: '30 Minutes', buttonLabel: 'Noodles', buttonText: image2 }, 
+    { imgSrc: burger, title: 'Big and Juicy Wagyu Beef Cheese Burger', timeText: '30 Minutes', price: '5$' },
+    { imgSrc: fish, title: 'Fresh Lime Roasted Salmon with ginger sauce', timeText: '30 Minutes', price: '8$' },
+    { imgSrc: strawberry, title: 'Strawberry Oatmeal Pancake with Honey Syrup', timeText: '30 Minutes', price: '15$' },
+    { imgSrc: salad, title: 'Fresh and Healthy Mixed Mayonese Salad', timeText: '30 Minutes', price: '10$' },
+    { imgSrc: cheese, title: 'Chicken Meetballs with Cream Cheese', timeText: '30 Minutes', price: '12$' },
+    { imgSrc: cake, title: 'Fruit PanCake with Orange & Blueberry', timeText: '30 Minutes', price: '10$' },
+    { imgSrc: chicken, title: 'The Best Easy One Pot Chicken and Rice', timeText: '30 Minutes', price: '12$' },
+    { imgSrc: pasta, title: 'The Cremiest Creamy Chicken and Bacon Pasta', price: '20$' },
+    { imgSrc: pic, title: 'Some Title', timeText: '30 Minutes', price: '15$' }, 
   ];
 
   export default recipeData
