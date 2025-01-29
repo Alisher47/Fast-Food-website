@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { addProduct } from '../../../../features/cartSlice'; // Correct path to your cartSlice
+import { addProduct } from '../../../../features/cartSlice';
 import Button from '../Buttons/buttons';
 
 const RecipeCard = ({ imgSrc, title, description, price }) => {
@@ -16,7 +16,7 @@ const RecipeCard = ({ imgSrc, title, description, price }) => {
       price, 
     };
 
-    dispatch(addProduct(product)); // Dispatch the action to add the product to the cart
+    dispatch(addProduct(product)); 
   };
 
   return (

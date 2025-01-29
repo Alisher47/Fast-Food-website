@@ -1,8 +1,8 @@
 import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 const initialState = {
-  products: [], // To store the product details
-  cartItemCount: 0, // To store the number of items in the cart
+  products: [], 
+  cartItemCount: 0, 
 };
 
 export const cartSlice = createSlice({
@@ -11,17 +11,17 @@ export const cartSlice = createSlice({
   reducers: {
     addProduct: (state, action) => {
       const product = {
-        id: nanoid(), // Unique id for the product
+        id: nanoid(), 
         ...action.payload,
       };
-      state.products.push(product); // Add product to the cart
-      state.cartItemCount += 1; // Increment the cart count
+      state.products.push(product); 
+      state.cartItemCount += 1; 
     },
     removeProduct: (state, action) => {
       state.products = state.products.filter(
         (product) => product.id !== action.payload
       );
-      state.cartItemCount -= 1; // Decrement the cart count
+      state.cartItemCount -= 1; 
     },
   },
 });
