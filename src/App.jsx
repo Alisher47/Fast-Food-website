@@ -6,11 +6,16 @@ import About from './assets/pages/About/about';
 import Blog from './assets/pages/Blog/blog';
 import Contact from './assets/pages/Contact/contact';
 import Cart from './assets/pages/Add To Cart/cart';
+import Register from './assets/pages/signUp/signUp'
+import Login from './assets/pages/signIn/signIn'
+
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path='/' element={<Register />} />
+        <Route path='/login' element={<Login />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/recipe/:recipeId" element={<RecipeDetail />} />
         <Route path='/about' element={<About />} />
         <Route path='/blog' element={<Blog />} />
